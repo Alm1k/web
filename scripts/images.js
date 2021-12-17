@@ -1,4 +1,29 @@
 window.addEventListener('DOMContentLoaded', async () => {
+    // 1 - swiper element class
+    // 2 arg - config
+    // pagination - pagination
+    // pagination.el - pagination element class
+    // pagination.clickable - clickable pagination
+    // pagination.dynamicBullets - makes counts of bullets dynamic
+    // slidesPerView - count of elements in one display
+    // spaceBetween - space between elements
+    // navigation - navigation element class
+    // navigation.nextEl - right button element class
+    // navigation.prevEl - left button element class
+    const swiper = new Swiper(".swiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+        slidesPerView: 5,
+        spaceBetween: 11,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
     const links = [
         'https://jsonplaceholder.typicode.com/photos?albumId=1',
         'https://jsonplaceholder.typicode.com/photos?albumId=2',
@@ -12,13 +37,16 @@ window.addEventListener('DOMContentLoaded', async () => {
         .finally(() => hideLoader());
 
     for (const [idx, data] of responses.entries()) {
-        const gallery = document.querySelector('.gallery');
+        const gallery = document.querySelector('.swiper-wrapper');
         const filter = (item) => idx % 2 ? item.id % 2 === 0 : item.id % 2 === 1;
         data.filter(filter).forEach(item => {
             const img = document.createElement('img');
-            img.className = 'gallery__item';
+            const div = document.createElement('div');
             img.src = item.url;
-            gallery.appendChild(img);
+            img.className = 'gallery__item';
+            div.className = 'swiper-slide';
+            div.appendChild(img);
+            gallery.appendChild(div);
         })
     }
 });
