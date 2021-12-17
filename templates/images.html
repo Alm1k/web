@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../styles/outlines.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/table.css">
+    <link rel="stylesheet" href="../styles/todo_list.css">
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/images.js"></script>
     <title>Визитная Карта</title>
 </head>
 <body>
@@ -30,7 +32,7 @@
                     <a class="menu__item-link"  href="constructor.html">Конструктор</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link"  href="snippet.html">Сниппет Кода</a>
+                    <a class="menu__item-link"  href="images.html">Картинки</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__item-link"  href="quote.html">Цитата</a>
@@ -43,43 +45,11 @@
     </div>
 </header>
 <main class="content">
-    <section id="code" class="entry-content">
-        <h2 class="title">Сниппет кода первой лабы по ООП:</h2>
-        <pre class="headline">
-                <code>
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.nio.file.Files;
-
-public class SHA256Sum {
-    public static void main(String[] args) {
-        try {
-            if (args.length > 0) {
-                for (String arg : args) {
-                    File file = new File(arg);
-                    if (file.exists()) {
-                        System.out.printf("%s *%s\n", HashSummer.getHash(), file.getName());
-                    } else {
-                        System.err.printf("File %s not found\n", file.getName());
-                    }
-                }
-            } else {
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                byte[] buffer = new byte[1024 * 32];
-
-                int bytesRead;
-                while ((bytesRead = System.in.read(buffer)) > 0) {
-                    baos.write(buffer, 0, bytesRead);
-                }
-                System.out.printf("%s *-\n", HashSummer.getHash(baos.toByteArray(), "SHA-256", 64));
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-}
-                </code>
-            </pre>
+    <section class="entry-content">
+        <div class="loading">
+            <img class="loading__image" src="../assets/gifs/loader.gif" alt="Loading..." />
+        </div>
+        <div class="gallery"></div>
     </section>
 </main>
 <footer class="footer">
