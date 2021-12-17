@@ -1,0 +1,32 @@
+
+
+.table .line {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+}
+
+.table .line:nth-child(2n + 1) .cell {
+    background-color: aliceblue;
+}
+
+.table .line:first-child .cell {
+    background-color: cadetblue;
+}
+
+.table .line:first-child .cell {
+    border-top: 1px solid black;
+}
+
+.table .line .cell {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.table .line .cell:first-child {
+    background-color: cadetblue;
+}
+
+.table .line .cell:last-child{
+    border-right: 1px solid black;
+}
