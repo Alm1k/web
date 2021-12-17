@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     // navigation - navigation element class
     // navigation.nextEl - right button element class
     // navigation.prevEl - left button element class
-    const swiper = new Swiper(".swiper", {
+    new Swiper(".swiper", {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
