@@ -44,6 +44,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid;
 }
 
 .inside-header {
@@ -52,12 +58,14 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 5px;
+    height: 100px;
 }
 
 .content {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 200px;
 }
 
 .logo {
@@ -72,6 +80,8 @@ body {
 
 .entry-content {
     margin-top: 2em;
+    margin-bottom: 2em;
+    scroll-margin-top: 150px;
 }
 
 .quote {
@@ -103,4 +113,74 @@ body {
 .cat-image img {
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo_img {
+    width: 180px;
+    height: 80px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.gallery__item {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.table .line {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+}
+
+.table .line:nth-child(2n + 1) .cell {
+    background-color: aliceblue;
+}
+
+.table .line:first-child .cell {
+    background-color: cadetblue;
+}
+
+.table .line:first-child .cell {
+    border-top: 1px solid black;
+}
+
+.table .line .cell {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.table .line .cell:first-child {
+    background-color: cadetblue;
+}
+
+.table .line .cell:last-child{
+    border-right: 1px solid black;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        display: none;
+    }
+
+    .inside-header {
+        justify-content: space-around;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .gallery__item {
+        width: 400px;
+        height: 400px;
+    }
 }
