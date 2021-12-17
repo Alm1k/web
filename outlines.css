@@ -1,0 +1,10 @@
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul li {
+    display: inline;
+    padding: 0 5px;
+}
