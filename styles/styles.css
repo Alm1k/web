@@ -23,6 +23,10 @@ body {
     display: block;
 }
 
+.menu__item-link-selected {
+    text-decoration: underline;
+}
+
 .menu__item-link:hover {
     color: #941b80;
 }
@@ -66,6 +70,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-top: 200px;
+    min-height: calc(100vh - 236px);
 }
 
 .logo {

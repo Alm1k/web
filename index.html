@@ -7,35 +7,36 @@
     <link rel="stylesheet" href="styles/outlines.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/table.css">
+    <script src="scripts/script.js"></script>
     <title>Визитная Карта</title>
 </head>
 <body>
     <header class="header">
         <div class="inside-header">
             <div class="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="/assets/images/logo.png" alt="Логотип" class="logo_img">
                 </a>
             </div>
             <nav class="menu">
                 <ul class="d-flex align-items-center flex-row">
                     <li class="menu__item">
-                        <a class="menu__item-link" href="#about-me">Обо мне</a>
+                        <a class="menu__item-link" href="index.html">Обо мне</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__item-link"  href="#achievements">Достижения</a>
+                        <a class="menu__item-link"  href="templates/achievements.html">Достижения</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__item-link"  href="#acsii">ASCII</a>
+                        <a class="menu__item-link"  href="templates/ascii.html">ASCII</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__item-link"  href="#code">Сниппет Кода</a>
+                        <a class="menu__item-link"  href="templates/snippet.html">Сниппет Кода</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__item-link"  href="#quote">Цитата</a>
+                        <a class="menu__item-link"  href="templates/quote.html">Цитата</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__item-link"  href="#table">Таблица</a>
+                        <a class="menu__item-link"  href="templates/table.html">Таблица</a>
                     </li>
                 </ul>
             </nav>
@@ -52,155 +53,6 @@
             </p>
             <div class="cat-image">
                 <img src="assets/images/kot.jpg" alt="Ну, пожалуйста">
-            </div>
-        </section>
-        <!-- Achievements -->
-        <section id="achievements" class="entry-content">
-            <h2 class="title">Достижения:</h2>
-            <ol class="achievement__list">
-                <li>
-                    Почти закрылся без долгов
-                </li>
-                <li>
-                    Обучаюсь в ИТМО
-                </li>
-                <li>
-                    Купил ноутбук
-                </li>
-                <li>
-                    Умею бегать
-                </li>
-            </ol>
-        </section>
-        <!-- ASCII -->
-        <section id="acsii" class="entry-content">
-            <h2 class="title">ASCII Картинка:</h2>
-            <pre class="headline">
-                                          ,▄▄▄
-                                       ▄▓█▀▀▀▀▀█▄
-               ▄▄▓█`       ,▄▄▓▓▄▄▄▄▄@██▀!√√√√√└▀█▄
-            .▓█▀██       #█▀▀└:.!╙▀▀██▀:√√√√√√√√√!▀▀█▓▓▄▄
-           ╓█▀..▀█▓▄▄▄▄▓▀▀:√√√√√√√√√√√√√√√√√√√√√√√√√░░▀▀██▄
-           ██.√√√!▀▀▀▀▀:√√√√√√√√√√√√√√√√√√√√√√√√√√√√╠░░░░▀█▄
-           █▌√√√√√√√√√√√√√▄▄▄▄▄.√√√√√√√╓▄▄▄.√√√√√√√√╠░░░░░╙█▄
-           ██.√√√√√√√√√▄#█▀╙`╙▀█▓▄▄▄@▓██████▄.√√√√√╠░░░░░░░╙█▓▄
-         ┌████:√√√√√(▄█▀╙       └▀▀▀▀└   └▀▀██,√√╓╢░░░░░░░░░░▀██▄
-         ██:√╙▀▓▄▄▓▓▀▀                      └██▄░░░░░░░░░░░░░░░██▄
-         █▌√√╓██▀  ▄▄@╕                       ▀▀█▓▀▀▀▀▀▀███▄░░░░██▄
-         ██▄▓█▀  ╙▀▀▀▀▀                 ,▄               ▀███░░░░██▄
-          ███`                         ▓███,     .        ███░░░░║██
-         ▓█▀     ,▄                     └▀██▄            ▄██▀░░░░░██`
-        ██▀     ███¼        ,              ▀▀        ╓@██▀▀░░░░░░░██
-       ██▀     ▐███       ╓█▀        ▄▄,          .  ▄╙▀█░░░░░░░░╟██
-      ▐█▌       ▀▀└     .▓█└        #███          .  ╙█▓,▀█░░░░░░██▌
-      ██              ▄▓█▀          ███▌          . .▄,▀█▄╙█░░░░███
-     ╟█▌            #██▀            ╙▀▀           .  ▀█▓,█▄╙█░░███
-     ██─            ███                             ▓▄,▀█▄█,█░███`
-     ██             ╙███                         .   ▀█▄╙█Ö█████
-     ██    ,#         ╙╙                         . ╙█▄ ▀ ╙████▀
-     ██  ╒███▄▄                  ▐█▄            .   ╙▀  .@███┘
-     ██▌  ██▄ └╙▀▀#╦▄▄▄▄▄▄▄▄▄▄▄▄#████▄         .         ╙███
-     ▐██   ▀ ▀▓▄,     `└╙└└ .      ███▌        .          ╟██
-      ██▌      ╙▀█▓▄▄▄,   .,▄▄▄▓▓▀▀╙██        .          .███
-      └██▄        └▀▀▀███▀▀▀▀╙"     ▀       ..          ▄███
-       ╙██▄       Ñ▓▓▓▓µ                   ..    ▄▓▓▓▓███▀`
-        └██▄        `└└                  ..    ▄███▀└└
-          ▀██▄                          .   ▄▓██▀└
-            ▀█▓▄                     ..  ▄▓██▀╙
-              ╙▀█▄,                .╓▄▓██████
-                 ╙██▓▄         ...   '' ▄██▀
-                  ╙█████▓▓▄▄▄▄      .▄▄██▀'
-                    ▀█████▄▄▄▄▄▄▄▄▓████▀
-                       ╙▀▀▀██████▀▀▀╙
-            </pre>
-        </section>
-        <!-- Code -->
-        <section id="code" class="entry-content">
-            <h2 class="title">Сниппет кода первой лабы по ООП:</h2>
-            <pre class="headline">
-                <code>
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.nio.file.Files;
-
-public class SHA256Sum {
-    public static void main(String[] args) {
-        try {
-            if (args.length > 0) {
-                for (String arg : args) {
-                    File file = new File(arg);
-                    if (file.exists()) {
-                        System.out.printf("%s *%s\n", HashSummer.getHash(), file.getName());
-                    } else {
-                        System.err.printf("File %s not found\n", file.getName());
-                    }
-                }
-            } else {
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                byte[] buffer = new byte[1024 * 32];
-
-                int bytesRead;
-                while ((bytesRead = System.in.read(buffer)) > 0) {
-                    baos.write(buffer, 0, bytesRead);
-                }
-                System.out.printf("%s *-\n", HashSummer.getHash(baos.toByteArray(), "SHA-256", 64));
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-}
-                </code>
-            </pre>
-        </section>
-        <!-- Quote -->
-        <section id="quote" class="entry-content">
-            <h2 class="title">Цитата:</h2>
-            <blockquote class="quote headline">
-                <p>Не совершай классическую ошибку всех умников: не думай, что нет людей умнее тебя.</p>
-                <cite>Карл Ван Лун</cite>
-            </blockquote>
-        </section>
-        <section class="entry-content" id="table">
-            <h2 class="title">Таблица:</h2>
-            <div class="table">
-                <div class="line">
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                </div>
-                <div class="line">
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                </div>
-                <div class="line">
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                </div>
-                <div class="line">
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                </div>
-                <div class="line">
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                    <div class="cell">Content</div>
-                </div>
-            </div>
-        </section>
-        <section class="entry-content">
-            <div class="gallery">
-                <img class="gallery__item" src="assets/images/cute_cat_1.jfif" alt="Cute cat 1">
-                <img class="gallery__item" src="assets/images/cute_cat_2.jfif" alt="Cute cat 2">
-                <img class="gallery__item" src="assets/images/cute_cat_3.jfif" alt="Cute cat 3">
             </div>
         </section>
     </main>
