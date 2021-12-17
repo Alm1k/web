@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/outlines.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/table.css">
+    <link rel="stylesheet" href="../styles/todo_list.css">
     <script src="../scripts/script.js"></script>
     <title>Визитная Карта</title>
 </head>
@@ -44,39 +45,20 @@
 </header>
 <main class="content">
     <section id="achievements" class="entry-content">
-        <h2 class="title">Достижения:</h2>
-        <ol class="achievement__list">
-            <li>
-                Почти закрылся без долгов
-            </li>
-            <li>
-                Обучаюсь в ИТМО
-            </li>
-            <li>
-                Купил ноутбук
-            </li>
-            <li>
-                Умею бегать
-            </li>
-            <li>
-                Почти закрылся без долгов
-            </li>
-            <li>
-                Обучаюсь в ИТМО
-            </li>
-            <li>
-                Купил ноутбук
-            </li>
-            <li>
-                Умею бегать
-            </li>
-        </ol>
-    </section>
-    <section class="entry-content">
-        <div class="gallery">
-            <img class="gallery__item" src="../assets/images/cute_cat_1.jfif" alt="Cute cat 1">
-            <img class="gallery__item" src="../assets/images/cute_cat_2.jfif" alt="Cute cat 2">
-            <img class="gallery__item" src="../assets/images/cute_cat_3.jfif" alt="Cute cat 3">
+        <h2 class="title">Список дел:</h2>
+        <div class="todo">
+            <div class="todo__container">
+                <form onsubmit="todo.add(); return false;" class="todo__input">
+                    <input class="todo__text" type="text">
+                    <input class="todo__add" type="submit" value="Add">
+                </form>
+                <select class="todo__options">
+                    <option value="all">Все</option>
+                    <option value="active">Активные</option>
+                    <option value="completed">Завершенные</option>
+                </select>
+            </div>
+            <ul class="todo__items" data-todo-option="active"></ul>
         </div>
     </section>
 </main>

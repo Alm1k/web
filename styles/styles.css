@@ -54,6 +54,7 @@ body {
     left: 0;
     right: 0;
     border-bottom: 1px solid;
+    z-index: 30;
 }
 
 .inside-header {
@@ -157,4 +158,8 @@ body {
         width: 400px;
         height: 400px;
     }
+}
+
+.d-none {
+    display: none;
 }
